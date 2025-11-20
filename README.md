@@ -39,7 +39,9 @@ Dự án bao gồm:
 ├── README.md
 └── *.bin                        # test files (1kb, 4kb, 16kb, 256kb, 1mb, 8mb)
 
-🛠️ Build
+```
+---
+##🛠️ Build
 ✔ Windows (MinGW-w64)
 g++ -std=c++17 -O2 src\aes.cpp src\cbc.cpp src\main.cpp -o aes_tool.exe
 g++ -std=c++17 -O2 src\aes.cpp src\cbc.cpp src\perf.cpp -o aes_perf.exe
