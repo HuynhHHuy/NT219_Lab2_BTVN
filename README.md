@@ -57,11 +57,11 @@ aes_tool selftest
 
 Output sẽ bao gồm:
 
-FIPS-197 AES-128 ECB test: OK
+- FIPS-197 AES-128 ECB test: OK
 
-SP800-38A CBC AES-128 test: OK
+- SP800-38A CBC AES-128 test: OK
 
-All self-tests passed.
+- All self-tests passed.
 
 2️⃣ Mã hoá (CBC + PKCS#7)
 aes_tool enc \
@@ -81,20 +81,20 @@ aes_tool dec \
 
 (dùng để test với SP800-38A hoặc dữ liệu bội số 16)
 
-aes_tool enc --no-pad ...
-aes_tool dec --no-pad ...
+- aes_tool enc --no-pad ...
+- aes_tool dec --no-pad ...
 
 ⚙️ Benchmark với aes_perf
 
 Công cụ aes_perf đo hiệu năng:
 
-Warm-up ~1 giây
+- Warm-up ~1 giây
 
-1 block = 1000 round (enc + dec)
+- 1 block = 1000 round (enc + dec)
 
-10 block → lấy mean, median, stddev, 95% CI
+- 10 block → lấy mean, median, stddev, 95% CI
 
-Xuất file CSV để phân tích trong Excel
+- Xuất file CSV để phân tích trong Excel
 
 Chạy benchmark
 aes_perf \
@@ -105,13 +105,13 @@ aes_perf \
 
 Output bao gồm:
 
-Thời gian từng block (10 block)
+- Thời gian từng block (10 block)
 
-Mean, Median, Stddev
+- Mean, Median, Stddev
 
-95% Confidence Interval
+- 95% Confidence Interval
 
-Throughput (MB/s)
+- Throughput (MB/s)
 
 🧪 Kiểm thử & KAT
 
