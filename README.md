@@ -42,15 +42,15 @@ Dự án bao gồm:
 ```
 ---
 ## Build
-# Windows (MinGW-w64)
+## Windows (MinGW-w64)
 g++ -std=c++17 -O2 src\aes.cpp src\cbc.cpp src\main.cpp -o aes_tool.exe
 g++ -std=c++17 -O2 src\aes.cpp src\cbc.cpp src\perf.cpp -o aes_perf.exe
 
-# Linux
+## Linux
 g++ -std=c++17 -O2 src/aes.cpp src/cbc.cpp src/main.cpp -o aes_tool
 g++ -std=c++17 -O2 src/aes.cpp src/cbc.cpp src/perf.cpp -o aes_perf
 
-# Sử dụng công cụ aes_tool
+## Sử dụng công cụ aes_tool
 1️⃣ Self-test (đảm bảo tính đúng đắn của AES)
 aes_tool selftest
 
@@ -96,7 +96,7 @@ Công cụ aes_perf đo hiệu năng:
 
 - Xuất file CSV để phân tích trong Excel
 
-# Chạy benchmark
+## Chạy benchmark
 aes_perf \
   --key-hex 00112233445566778899aabbccddeeff \
   --iv-hex  000102030405060708090a0b0c0d0e0f \
