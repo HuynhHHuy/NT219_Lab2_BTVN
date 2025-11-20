@@ -1,4 +1,4 @@
-# 🔐 AES-128 CBC – Lab 2 (Cryptography)
+#  AES-128 CBC – Lab 2 (Cryptography)
 
 Dự án này triển khai **AES-128**, **CBC mode**, **PKCS#7 padding** và các công cụ kiểm thử/benchmark theo yêu cầu của **Lab 2 – NT219 (Cryptography & Applications)**.
 
@@ -19,7 +19,7 @@ Dự án bao gồm:
 
 ---
 
-## 📁 Cấu trúc thư mục
+##  Cấu trúc thư mục
 
 ```text
 .
@@ -41,7 +41,7 @@ Dự án bao gồm:
 
 ```
 ---
-##🛠️ Build
+## Build
 ✔ Windows (MinGW-w64)
 g++ -std=c++17 -O2 src\aes.cpp src\cbc.cpp src\main.cpp -o aes_tool.exe
 g++ -std=c++17 -O2 src\aes.cpp src\cbc.cpp src\perf.cpp -o aes_perf.exe
@@ -50,7 +50,7 @@ g++ -std=c++17 -O2 src\aes.cpp src\cbc.cpp src\perf.cpp -o aes_perf.exe
 g++ -std=c++17 -O2 src/aes.cpp src/cbc.cpp src/main.cpp -o aes_tool
 g++ -std=c++17 -O2 src/aes.cpp src/cbc.cpp src/perf.cpp -o aes_perf
 
-🚀 Sử dụng công cụ aes_tool
+ Sử dụng công cụ aes_tool
 1️⃣ Self-test (đảm bảo tính đúng đắn của AES)
 aes_tool selftest
 
@@ -113,5 +113,4 @@ Output bao gồm:
 
 - Throughput (MB/s)
 
-🧪 Kiểm thử & KAT
 
