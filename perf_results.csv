@@ -1,0 +1,43 @@
+File,SizeBytes,RoundsPerBlock,Blocks,MeanMs,MedianMs,StddevMs,CILowMs,CIHighMs,ThroughputMBps,,,
+1kb.bin,1024,1000,10,250.916,251.864,12.4038,242.044,259.789,3.89198,,,
+4kb.bin,4096,1000,10,1003.55,995.306,40.1148,974.853,1032.24,3.89244,,,
+16kb.bin,16384,1000,10,4052.52,4049.97,51.7783,4015.48,4089.56,3.85562,,,
+256kb.bin,262144,1000,10,70569.2,67353.8,6747.38,65742.7,75395.6,3.54262,,,
+1mb.bin,1048576,1000,10,316355,311797,11749.7,307950,324759,3.16101,,,
+8mb.bin,8388608,1000,10,2.20E+06,2.15E+06,270520,2.00E+06,2.39E+06,3.64259,,,
+,,,,,,,,,,,,
+Block,File,SizeBytes,RoundsPerBlock,operation,blocktime,,Block,File,SizeBytes,RoundsPerBlock,operation,blocktime
+1,1kb.bin,1024,1000,enc + dec,237.551 ms,,1,4kb.bin,4096,1000,enc + dec,970.308 ms
+2,1kb.bin,1024,1000,enc + dec,254.293 ms,,2,4kb.bin,4096,1000,enc + dec,987.485 ms
+3,1kb.bin,1024,1000,enc + dec,238.546 ms,,3,4kb.bin,4096,1000,enc + dec,985.359 ms
+4,1kb.bin,1024,1000,enc + dec,252.284 ms,,4,4kb.bin,4096,1000,enc + dec,1007.02 ms
+5,1kb.bin,1024,1000,enc + dec,251.445 ms,,5,4kb.bin,4096,1000,enc + dec,954.359 ms
+6,1kb.bin,1024,1000,enc + dec,272.352 ms,,6,4kb.bin,4096,1000,enc + dec,1040.76 ms
+7,1kb.bin,1024,1000,enc + dec,243.03 ms,,7,4kb.bin,4096,1000,enc + dec,1096.63 ms
+8,1kb.bin,1024,1000,enc + dec,237.816 ms,,8,4kb.bin,4096,1000,enc + dec,1004.42 ms
+9,1kb.bin,1024,1000,enc + dec,252.384 ms,,9,4kb.bin,4096,1000,enc + dec,986.013 ms
+10,1kb.bin,1024,1000,enc + dec,269.464 ms,,10,4kb.bin,4096,1000,enc + dec,1003.13 ms
+,,,,,,,,,,,,
+Block,File,SizeBytes,RoundsPerBlock,operation,blocktime,,Block,File,SizeBytes,RoundsPerBlock,operation,blocktime
+1,16kb.bin,16384,1000,enc + dec,4069.95 ms,,1,256kb.bin,262144,1000,enc + dec,67215.2 ms
+2,16kb.bin,16384,1000,enc + dec,4114 ms,,2,256kb.bin,262144,1000,enc + dec,64896.5 ms
+3,16kb.bin,16384,1000,enc + dec,4107.78 ms,,3,256kb.bin,262144,1000,enc + dec,64796.3 ms
+4,16kb.bin,16384,1000,enc + dec,3980.07 ms,,4,256kb.bin,262144,1000,enc + dec,64785.3 ms
+5,16kb.bin,16384,1000,enc + dec,3979.52 ms,,5,256kb.bin,262144,1000,enc + dec,67492.4 ms
+6,16kb.bin,16384,1000,enc + dec,4024.01 ms,,6,256kb.bin,262144,1000,enc + dec,81598.4 ms
+7,16kb.bin,16384,1000,enc + dec,4097.62 ms,,7,256kb.bin,262144,1000,enc + dec,80528.8 ms
+8,16kb.bin,16384,1000,enc + dec,4099.29 ms,,8,256kb.bin,262144,1000,enc + dec,70233.3 ms
+9,16kb.bin,16384,1000,enc + dec,4030 ms,,9,256kb.bin,262144,1000,enc + dec,77756 ms
+10,16kb.bin,16384,1000,enc + dec,4022.99 ms,,10,256kb.bin,262144,1000,enc + dec, 66389.8 ms
+,,,,,,,,,,,,
+Block,File,SizeBytes,RoundsPerBlock,operation,blocktime,,Block,File,SizeBytes,RoundsPerBlock,operation,blocktime
+1,1mb.bin,1048576,1000,enc + dec,307437 ms,,1,8mb.bin,8388608,1000,enc + dec,2.45255e+06 ms
+2,1mb.bin,1048576,1000,enc + dec,311229 ms,,2,8mb.bin,8388608,1000,enc + dec,2.49377e+06 ms
+3,1mb.bin,1048576,1000,enc + dec,313818 ms,,3,8mb.bin,8388608,1000,enc + dec,2.48761e+06 ms
+4,1mb.bin,1048576,1000,enc + dec,311186 ms,,4,8mb.bin,8388608,1000,enc + dec,2.48559e+06 ms
+5,1mb.bin,1048576,1000,enc + dec,312205 ms,,5,8mb.bin,8388608,1000,enc + dec,2.32394e+06 ms
+6,1mb.bin,1048576,1000,enc + dec,310883 ms,,6,8mb.bin,8388608,1000,enc + dec,1.9372e+06 ms
+7,1mb.bin,1048576,1000,enc + dec,311446 ms,,7,8mb.bin,8388608,1000,enc + dec,1.93492e+06 ms
+8,1mb.bin,1048576,1000,enc + dec,326721 ms,,8,8mb.bin,8388608,1000,enc + dec,1.93574e+06 ms
+9,1mb.bin,1048576,1000,enc + dec,346473 ms,,9,8mb.bin,8388608,1000,enc + dec,1.94184e+06 ms
+10,1mb.bin,1048576,1000,enc + dec,312149 ms,,10,8mb.bin,8388608,1000,enc + dec,1.96926e+06 ms

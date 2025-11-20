@@ -1,0 +1,17 @@
+# build output
+*.exe
+*.o
+*.obj
+*.pdb
+*.dll
+*.so
+
+# IDE
+.vscode/
+.idea/
+*.user
+*.suo
+
+# perf data
+*.csv
+*.bin
