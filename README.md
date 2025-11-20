@@ -43,12 +43,16 @@ Dự án bao gồm:
 ---
 ## Build
 ## Windows (MinGW-w64)
+```text
 g++ -std=c++17 -O2 src\aes.cpp src\cbc.cpp src\main.cpp -o aes_tool.exe
 g++ -std=c++17 -O2 src\aes.cpp src\cbc.cpp src\perf.cpp -o aes_perf.exe
+```
 
 ## Linux
+```text
 g++ -std=c++17 -O2 src/aes.cpp src/cbc.cpp src/main.cpp -o aes_tool
 g++ -std=c++17 -O2 src/aes.cpp src/cbc.cpp src/perf.cpp -o aes_perf
+```
 
 ## Sử dụng công cụ aes_tool
 1️⃣ Self-test (đảm bảo tính đúng đắn của AES)
@@ -64,19 +68,21 @@ Output sẽ bao gồm:
 - All self-tests passed.
 
 2️⃣ Mã hoá (CBC + PKCS#7)
-aes_tool enc \
+```
+./aes_tool.exe enc \
   --in plain.txt \
   --out cipher.bin \
   --key-hex 00112233445566778899aabbccddeeff \
   --iv-hex  000102030405060708090a0b0c0d0e0f
-
+```
 3️⃣ Giải mã
-aes_tool dec \
+```
+./aes_tool.exe dec \
   --in cipher.bin \
   --out plain2.txt \
   --key-hex 00112233445566778899aabbccddeeff \
   --iv-hex  000102030405060708090a0b0c0d0e0f
-
+```
 4️⃣ Chế độ không padding (CBC no-pad)
 
 (dùng để test với SP800-38A hoặc dữ liệu bội số 16)
@@ -84,7 +90,7 @@ aes_tool dec \
 - aes_tool enc --no-pad ...
 - aes_tool dec --no-pad ...
 
-# Benchmark với aes_perf
+## Benchmark với aes_perf
 
 Công cụ aes_perf đo hiệu năng:
 
